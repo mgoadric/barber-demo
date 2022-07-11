@@ -1,0 +1,168 @@
+/* ============================================================================================== */
+/* This is CSS to do a full screen background image. I'm not sure I want to use it, but it's worth checking out */
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1400px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1400px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -700px;   /* 50% */
+  }
+}
+
+/* It requires a div that sits above it to show text. I hadn't realized that. Here's that div */
+/* If we use this we'll need to be sure our media call does a smaller text window. 
+#page-wrap { 
+position: relative; width: 60%; margin: 50px auto; 
+padding: 20px; 
+background-color: #fff;
+background-color: rgba(255,255,255,0.6);
+-moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; 
+box-shadow: 0 0 20px black;
+font-family: sans-serif;
+}
+
+h1 {
+font:BickhamScriptPro-Regular; 
+font-family: sans-serif;
+text-align: center;
+}
+
+/* Need to resize the page wrap if screen is below a certain size 
+
+
+@media screen and (max-width: 1300px){
+  #page-wrap { 
+    position: relative;
+    width: 90%;
+    margin: 25px auto; 
+    padding: 20px; 
+  }
+}
+
+/* Set some general color things for fonts */
+a:visited {
+    color: black;
+}
+
+
+/* ============================================================================================== */
+/* Next up - transparent menu *
+
+
+nav {
+  margin: 0;
+}
+
+
+nav ul {
+  text-align: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 25px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+/* ============================================================================================== */
+/* These are some custom css stuff I'm doing to get floating boxes of goodness 
+.service_area {
+	width: 45%;
+	display: inline-block;
+	vertical-align:top;
+	margin: 0.5em;
+}
+
+/* Need to resize the page wrap if screen is below a certain size */
+/* add here that the nav gets out of control on small screens, so I'll change that too
+@media screen and (max-width: 700px){
+	.service_area {
+		width: 95%;
+}
+
+
+	nav ul {
+	  text-align: center;
+	  width: 100%;
+}
+
+	nav ul li a {
+	  padding: 5px;
+	  font-size: 15px;
+}
+	h1 {
+	  font-size: 25px;
+}
+
+
+} /*end media call 
+
+
+
+
+.service_area img {
+   height: 100%;
+   width: 100%;
+}
+
+.service_area em {
+  font-weight: bold;
+}
+
+
+/* ============================================================================================== */
+/* This is just basic things I want to have happen. Nothing interesting to see here. Move along.  */
+
+/*
+a:link {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #101010;
+ }
+ */
+
+
+ body {
+  position: relative;
+}
+
+/* https://stackoverflow.com/a/56467997 */
+html {
+  scroll-padding-top: 80px; /* height of sticky header */
+}
+
+#page-wrap {
+  margin-top: 140px;
+}
+
+
+#logo {
+  transition: 0.4s;
+}
