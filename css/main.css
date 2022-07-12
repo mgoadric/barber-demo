@@ -1,24 +1,24 @@
 /* ============================================================================================== */
-/* This is CSS to do a full screen background image. I'm not sure I want to use it, but it's worth checking out */
+/* This is CSS to do a full screen background image. I'm not sure I want to use it, but it's worth checking out *
 img.bg {
-  /* Set rules to fill background */
+  /* Set rules to fill background *
   min-height: 100%;
   min-width: 1400px;
 	
-  /* Set up proportionate scaling */
+  /* Set up proportionate scaling *
   width: 100%;
   height: auto;
 	
-  /* Set up positioning */
+  /* Set up positioning *
   position: fixed;
   top: 0;
   left: 0;
 }
 
-@media screen and (max-width: 1400px) { /* Specific to this particular image */
+@media screen and (max-width: 1400px) { /* Specific to this particular image *
   img.bg {
     left: 50%;
-    margin-left: -700px;   /* 50% */
+    margin-left: -700px;   /* 50% *
   }
 }
 
@@ -52,7 +52,7 @@ text-align: center;
   }
 }
 
-/* Set some general color things for fonts */
+/* Set some general color things for fonts *
 a:visited {
     color: black;
 }
@@ -153,9 +153,7 @@ a:link {
   position: relative;
 }
 
-/* https://stackoverflow.com/a/56467997 */
-html {
-  scroll-padding-top: 80px; /* height of sticky header */
+h2, nav {  font-family: 'Montserrat', sans-serif;
 }
 
 #page-wrap {
