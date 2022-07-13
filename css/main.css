@@ -149,15 +149,23 @@ a:link {
  */
 
 
- body {
+html {
+  scroll-padding-top: 100px; /* height of sticky header */
+}
+
+body {
   position: relative;
 }
 
 h2, nav {  font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-#page-wrap {
-  margin-top: 140px;
+h2 {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 
