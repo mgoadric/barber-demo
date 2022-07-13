@@ -155,9 +155,10 @@ html {
 
 body {
   position: relative;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2, nav {  font-family: 'Montserrat', sans-serif;
+h2, nav {  
   text-align: center;
 }
 
